@@ -1,0 +1,162 @@
+
+
+
+#1 PRIMEIRA QUESTÃO
+
+#numeros = []
+
+
+#for i in range(5):
+   # numero = int(input("Digite um número inteiro: "))
+    #numeros.append(numero)
+
+#for i, numero in enumerate(numeros):
+ #   print("Número:", numero, "Posição:", i)
+
+
+
+#2 SEGUNDA QUESTÃO
+
+
+#################################
+
+#numeros = []
+
+
+#for i in range(10):
+   #numero = int(input("Digite dez números reais: "))
+   #numeros.append(numero)
+
+
+#numeros.reverse  
+
+#print(numeros)
+
+#3 TERCEIRA QUESTÃO
+
+
+#################################
+
+#notas = []
+
+
+#for i in range(4):
+   #nota = int(input(f"Digite as notas {i+1}: "))
+    #notas.append(nota)
+    
+#print(notas)    
+
+#media = sum(notas) / len(notas)
+
+
+#print(f"Média: {media}")
+
+
+#4 QUARTA QUESTÃO
+
+
+#################################
+
+#idades = []
+#for i in range(20):
+    #idade = int(input(f"Digite a idade {i+1}: "))
+    #idades.append(idade)
+
+#maior_idade = max(idades)
+#menor_idade = min(idades)
+
+
+#print(f"A maior idade é: {maior_idade}")
+#print(f"A menor idade é: {menor_idade}")
+
+
+#5 QUINTA QUESTÃO
+
+
+#################################
+
+#del idades
+
+#7 SÉTIMA QUESTÃO ( NÃO TEM 6 NA LISTA)
+
+#################################
+
+#lista_de_comprar = ['feijão', 'arroz' , 'açucar', 'sorvete', 'macarrão', '2kg de whey', 'kiboa']
+
+#8 OITAVA QUESTÃO
+
+
+#################################
+
+#deletar = input("Qual produto você deseja excluir?")
+
+#if deletar in lista_de_comprar:
+
+ #   lista_de_comprar.remove(deletar)
+
+#else:
+
+ #   print("Esse produto não existe")
+
+
+#print(lista_de_comprar)        
+
+
+#################################
+
+#9 NONA QUESTÃO
+
+#print("Hora de comer SORVETE!!!!")
+
+#lista_de_comprar.remove('sorvete')
+
+#print(lista_de_comprar)        
+
+
+#################################
+
+#10 DECIMA QUESTÃO
+
+#numero1 = int(input("Digite um número"))
+
+
+#if numero1 % 2 == 0 :
+ #   print("Esse número é par")
+#else :
+ #   print("Esse número é ímpar")    
+
+#################################
+
+#11 DECIMA PRIMEIRA QUESTÃO
+
+
+
+#palavra1 , palavra2= input("Digite duas palavras ").split( )
+
+#def par_inverso(palavra1, palavra2):
+ #   if len(palavra1) != len(palavra2):
+  #      return False
+
+   # return palavra1 == palavra2[::-1]
+
+
+#palavra1 = 'python'
+#palavra2 = 'nohtyp'
+#resultado = par_inverso(palavra1, palavra2)
+#print(resultado)  
+
+
+#12 DECIMA SEGUNDA QUESTÃO
+
+#def imprimir_numeros_primos():
+#    for num in range(1, 51):
+  #      if num > 1:
+          
+     #       for i in range(2, num):
+        #        if (num % i) == 0:
+          #          break
+            #else:
+               
+           #     print(num)
+
+#imprimir_numeros_primos()
