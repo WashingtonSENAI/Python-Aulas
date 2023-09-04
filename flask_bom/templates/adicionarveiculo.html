@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='brabo.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+   
+    <style>
+ :root{
+
+--bs-body-bg: rgb(0, 0, 0);
+--bs-emphasis-color: #ffffff;
+--bs-emphasis-color-rgb: 255,255,255;
+   
+}
+.border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) #d6a4a4!important;
+}
+
+.texto-branco {
+  color: white;
+}
+
+.p-3 {
+    padding: 0rem!important;
+}
+
+h3{
+
+color:white;
+margin-left: 30%;
+
+}
+table {
+      margin-left: 10%;
+      border-collapse: collapse;
+      width: 80%;
+      margin-bottom: 2%;
+    }
+    
+    th, td {
+      border: 1px solid rgb(255, 255, 255);
+      padding: 8px;
+      text-align: left;
+      color: rgb(181, 181, 185);
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 4px;
+    }
+/* Estilos para o footer */
+footer {
+      background-color: #d6a4a4;
+      padding: 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      position: fixed;
+      bottom: 0;
+      margin-top: 25%;
+      width: 100%;
+    }
+
+    /* Estilos para o link no footer */
+    footer a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Estilos para o link quando hover */
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #000000;
+    --bs-btn-border-color:  #d6a4a4;
+    --bs-btn-hover-color: #000000;
+    --bs-btn-hover-bg: #ffffff;
+    --bs-btn-hover-border-color: #d6a4a4;
+    }
+
+</style>
+    
+    <header class="p-3 mb-3 border-bottom texto-branco" >
+      <div class="container" >
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+            <img src="{{url_for('static', filename='Jm-removebg.png')}}" class="bi me-2" width="150" height="150" role="img" aria-label="Bootstrap" alt="Descrição da imagem">
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/" class="nav-link px-2 link-body-emphasis">Adicionar Veículo</a></li>
+            <li><a href="excluir.html" class="nav-link px-2 link-body-emphasis">Excluir um Veículo</a></li>
+            <li><a href="alterarveiculo.html" class="nav-link px-2 link-body-emphasis">Alterar Veículo</a></li>
+            <li><a href="listarveiculo.html" class="nav-link px-2 link-body-emphasis">Listar os Veículos Cadastrados</a></li>
+          </ul>
+  
+      
+  
+         
+        </div>
+      </div>
+    </header>
+   
+    <div class="container-md">
+      <form method="POST" action="/adicionar_veiculo"> 
+      <table>
+        <h3> Veículo </h3>
+        <tr>
+          <th>Tipo</th>
+          <td><input type="text" name="tipo" placeholder="Carro ou Moto" required></td>
+        </tr>
+        <tr>
+          <th>Cor</th>
+          <td><input type="text" name="cor" placeholder="Cor do veículo" required></td>
+        </tr>
+        <tr>
+          <th>Marca e Modelo</th>
+          <td><input type="text" name="marcamodelo" placeholder="Marca e modelo do veículo" required></td>
+        </tr>
+        <tr>
+          <th>Ano de Fabricação</th>
+          <td><input type="text" name="anodefabricacao"  placeholder="Ano de fabricação do veículo" required></td>
+        </tr>
+        <tr>
+          <th>Estado</th>
+          <td><input type="text"  name="estado"  placeholder="Novo ou Usado" required></td>
+        </tr>
+        <tr>
+          <th>Km Rodados</th>
+          <td><input type="text"  name="kmrodados"  placeholder="Quilometragem rodada" required></td>
+        </tr>
+        <tr>
+          <th>Passagem por Leilão</th>
+          <td><input type="text" name="passagem"  placeholder="Sim ou Não" required></td>
+        </tr>
+        <tr>
+          <th>Formas de Pagamento</th>
+          <td><input type="text" name="formapag" placeholder="À vista ou Parcelado" required></td>
+        </tr>
+       
+      </table>
+      <button type="submit" class="btn btn-primary btn-lg" style="margin-bottom: 2%; margin-left: 10%;">Adicionar</button>
+    </form>
+    </div>
+   
+    
+   
+
+    <!-- <footer>
+      <p>&copy; 2024 Jm carros rapidos. Todos os direitos reservados. | 
+        Desenvolvido por <a href="#"> washington e joão vitor</a></p>
+    </footer> -->
+  </body>
+</html>
